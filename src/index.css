@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #22254b;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.brand {
+  text-shadow: 0 0 10px #fff, 0 0 20px rgb(230, 142, 41), 0 0 30px #ed0d76, 0 0 40px #e6006b,
+    0 0 50px #cf00e6, 0 0 60px #d300e6, 0 0 70px #cb124d;
+  
+}
+.btn-search{
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 10px #eee;
+  border-radius: 8px;
+  border: none;
+  margin: 2px;
+  padding: 7px 27px;
+  text-transform: uppercase;
+}
+
+
+.select-genres{
+  width: 10rem;
+}
+
+.sort-container{
+  margin: 5rem 4rem 2rem; 
+}
+
+.ordenador{
+  background-color: #3f4374;
+  outline: #ff512f !important;
+}
+.ordenador:focus{
+  background-color: #3f4374;
+  outline: none;
+}
+.label{
+  margin: 0 auto;
+}
+
+.img {
+  transition: transform 0.1s;
+}
+
+.img:hover{
+  transform: scale(1.02);  
+}
+
+.btn-search:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg-transparent:hover{
+  color: #ff512f;
+  border: solid 1px #ff512f;
+}
+.card-body, nav{
+  background-color:#3f4374;
+}
+
+.modal-content{
+  background-color: rgb(75, 73, 121);
+  
+}
+
+.modal-data{
+  height: auto;
+}
+
+.movie-details{
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+#modal-img{
+  height: 100%;
+}
+
+.button-modal{
+  margin-left: 90%;
+}
+
+.movies{
+  margin: 0 8rem;
+}
+
+
+
+
+@media (max-width: 942px) {
+  
+  #modal-img {
+    opacity: 0.11;
+  }
+  .button-modal{
+    position:relative;
+    width: 25%;
+  }
+  .movies {
+    margin: 0 2.7rem;
+  }
+  .btn-search{
+    margin: 1px;
+    padding: 4px 4px;
+    font-size: 10px;
+  }
+  .btn{
+    margin: 2px;
+    padding: 4px 4px;
+    font-size: 10px;
+  }
+  .sort-container{
+    margin-left: 2.7rem;
+  }
+
+  #overview{
+    position: absolute;
+  }
+
+  .ordenador{
+    background-color: #3f4374;
+    border-color: none;
+    width: fit-content;
+  }
+}
+
